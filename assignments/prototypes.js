@@ -61,7 +61,6 @@ function Humanoid(player) {
 Humanoid.prototype = Object.create(CharacterStats.prototype);
 
 Humanoid.prototype.greet = function() {
-  console.log(this)
   return `${this.name} offers a greeting in ${this.language}`;
 };
 

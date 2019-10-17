@@ -11,6 +11,7 @@
 
 // Principle 1
 // code example for Window Binding
+// set this to point tot the window (global binding)
 
 window.number = 27
 function num () {
@@ -21,6 +22,7 @@ num()
 
 // Principle 2
 // code example for Implicit Binding
+// reffers to the left of the dot. only in objects with methods.
 
 const me = {
     name: 'Edwin',
@@ -33,6 +35,7 @@ const me = {
 
 // Principle 3
 // code example for New Binding
+// this points to the new object thats being created.
 
 function newUser (name, age) {
     this.name = name
@@ -45,6 +48,8 @@ function newUser (name, age) {
 
 // Principle 4
 // code example for Explicit Binding
+// Call (returns one by one) , Apply (returns as an array) or 
+// Bind(returns a brand new function that can be invoked later)
 
 function greeting () {
     console.log(`Hello, my name is ${this.name}`)
